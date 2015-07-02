@@ -9,6 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBAction func secondViewButton(sender: AnyObject) {
+        
+        let view2 = self.storyboard?.instantiateViewControllerWithIdentifier("view2") as! MyViewController2
+        self.navigationController?.pushViewController(view2, animated: true)
+        
+        
+    }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +32,5 @@ class ViewController: UIViewController {
     }
 
 
-}
+}   // Main Class
 
